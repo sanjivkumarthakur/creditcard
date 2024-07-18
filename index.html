@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glass morphism</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            
+        }
+
+        .body{
+            background: rgba(0, 0, 0, 0.808);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            /* width: 100vh; */
+            position: relative;
+            margin: 0;
+        }
+
+        .c1, .c2 ,.c3,.c4{
+            height: 150px;
+            width: 150px;
+            position: absolute;
+        }
+
+        .c1{
+            background: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+            left: 50px;
+            top: 50px;
+            border-radius: 50%;
+        }
+        .c3{
+            background: linear-gradient(blue,purple);
+            right: 50px;
+            bottom:  50px;
+            border-radius: 50% 10% 90% 30%;
+        }
+        .c2{
+            background: linear-gradient(red , yellow);
+            left: 50px;
+            bottom: 50px;
+            border-radius: 50% 30% 10% 70%;
+        }
+
+        .stack{
+            height: 100vh;
+            width: 100vw;
+            position: relative;
+            background: transparent;
+            backdrop-filter: blur(10px);
+
+        }
+
+        .cc{
+            background: rgba(196, 196, 196, 0.287);
+            position: absolute;
+            height: 250px;
+            width: 450px;
+            padding: 1rem;
+            border: 1px solid rgba(204, 204, 204, 0.581);
+            text-transform: uppercase;
+            border-radius: 15px;
+            box-shadow: 0 4px 30px 0 rgba(128, 128, 128, 0.6);
+            backdrop-filter: blur(15px);
+        }
+
+        .bank{
+            display: flex;
+            justify-content: space-between;
+        }
+        .title{
+            font-weight: bolder;
+            font-size: 1.5rem;
+            text-transform: capitalize;
+        }
+        .bank-name{
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: underline;
+            letter-spacing: 1px;
+        }
+        .num{
+            font-size: 2.4rem;
+            margin-top: 4rem;
+            letter-spacing: 2px;
+            font-weight: bolder;
+            display: flex;
+            justify-content: center;
+        }
+
+        .details{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+        }
+
+        .top{
+            font-size: 0.7rem;
+            margin-top: 10px;
+
+        }
+        .btm{
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+
+        }
+
+        .details> div:last-child{
+            font-size: 2.5rem;
+            font-weight: bolder;
+        }
+
+        .c4{
+            height: 150px;
+            width: 150px;
+            background: linear-gradient(rgb(128,0,100),red);
+            border-radius: 50%;
+            top: calc(50% - 210px);
+            right: calc(50% - 300px);
+        }
+    </style>
+</head>
+<body class="body">
+    <div class="c1"></div>
+    <div class="c2"></div>
+    <div class="c3"></div>
+    <div class="stack"></div>
+    <div class="c4"></div>
+    <div class="cc">
+
+        <div class="bank">
+            <div class="title">Credit Card</div>
+            <div class="bank-name">bank</div>
+        </div>
+      
+        
+        <div class="num"> 9763 2189 9997 4629 </div>
+        <div class="details">
+            <div>
+                <div class="top">Credit card</div>
+                <div class="btm">Sanjiv Kumar Thakur</div>
+            </div>
+            <div>
+                <div class="top">expiry date</div>
+                <div class="btm">12/2025</div>
+            </div>
+            <div>Visa</div>
+        </div>
+    </div>
+</body>
+</html>
